@@ -7,7 +7,7 @@ namespace PasswordGenerator
         static void Main(string[] args)
         {
             int passwordLengthMin = 5;
-            int passwordLengthMax = 100;
+            int passwordLengthMax = 100000;
             int passwordLength = 0;
             var loop = true;
 
@@ -25,7 +25,7 @@ namespace PasswordGenerator
                 Console.WriteLine("");
                 Console.WriteLine("Please enter a password length you'd like.");
                 Console.WriteLine("MIN: 5 characters");
-                Console.WriteLine("MAX: 100 characters");
+                Console.WriteLine("MAX: 100,000 characters");
                 passwordLength = int.Parse(Console.ReadLine());
 
                 // Password Min & Max Length Validation
@@ -33,7 +33,7 @@ namespace PasswordGenerator
                 {
                     Console.WriteLine("");
                     Console.WriteLine("ATTENTION!");
-                    Console.WriteLine("Length must be atleast 5 & less than 100 characters.");
+                    Console.WriteLine("Length must be atleast 5 & less than 100,000 characters.");
                 }
                 else
                 {

@@ -6,10 +6,11 @@ namespace PasswordGenerator
     {
         static void Main(string[] args)
         {
+            // Initialize Variables
             int passwordLengthMin = 5;
             int passwordLengthMax = 100000;
             int passwordLength = 0;
-            var loop = true;
+            bool infLoop = true;
 
 
             // Operning Text
@@ -20,7 +21,7 @@ namespace PasswordGenerator
             Console.WriteLine("----------------------------------------------------------");
 
             // Infinite Loop over the Program
-            while (loop == true)
+            while (infLoop == true)
             {
                 Console.WriteLine("");
                 Console.WriteLine("Please enter a password length you'd like.");
